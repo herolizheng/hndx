@@ -1,0 +1,121 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Highcharts</title>
+	<script src="code/highcharts.js"></script>
+	<script src="code/highcharts-more.js"></script>
+	<link rel="stylesheet" type="text/css" href="css/jiaowu.css">
+	<style type="text/css">
+		   body{
+		   	position: relative;
+		   }
+		#boxg {
+			position: absolute;
+			left:450px;
+			top:200px;
+			width: 600px;
+			height: 400px;
+		}
+	</style>
+</head>
+<body>
+<!-- header -->
+    <div class="box">
+    	<div class="one"><img src="img/logo.gif"></div>
+    	<div class="one1">
+    		<div class="one2"><a href="PersonalCenter.html">我的信息</a></div>
+        <div class="one2"><a href="jiaowu.html">教务中心</a></div>
+        <div class="one2"><a href="wdxf.html">我的学费</a></div>
+        <div class="one2"><a href="#">资料中心</a></div>
+    	</div>
+    	<select class="one3" >
+    		<option>自考</option>
+    		<option>远程</option>
+    	</select>
+        <p>910513201419学员：邹智，欢迎你！</p>
+        <div class="one4">
+            <a href="#">我的信息</a>
+            <a href="#">通知</a>
+            <a href="#">密码修改</a>
+            <a href="#">安全退出</a>
+        </div>
+        <div class="one5"><img src="img/qqq.jpg"></div>
+    </div>
+<!--aside  -->
+    <div class="two">
+        <div class="two1"></div>
+        <div class="two2">个人中心</div>
+        <ul class="two3" >
+           <li><a href="xinxi1.html">我的信息</a></li>
+            <li>班级信息</li>
+           <li><a href="xinxi2.html">短信息</a></li>
+                        <li><a href="xinxi3.html">学院通知</a></li>
+                        <li><a href="xinxi4.html">我的异议</a></li>
+        </ul>
+        <div class="two2">教务中心</div>
+        <ul class="two3" >
+            <li>我的报考</li>
+            <li><a href="demo.html">我的成绩</a></li>
+            <li>我的书籍</li>
+        </ul>
+        <div class="two2">学习中心</div>
+        <ul class="two3" >
+            <li>资料下载</li>
+            <li>学习历程</li>
+        </ul>
+        <div class="two2">财务中心</div>
+        <ul class="two3" >
+            <li>我的财务</li>
+        </ul>
+        <div class="two2">教学系统</div>
+        <div class="two1"></div>
+    </div>
+<!-- hgroup -->
+    <div class="three">教务中心&nbsp;&nbsp;>&nbsp;&nbsp;我的成绩</div>
+<div id="boxg"></div>
+	<script>
+		Highcharts.chart('boxg', {
+			chart: {
+				type: 'waterfall',
+			},
+			title: {
+				text: '湖南商贸经济管理专修学院'
+			},
+			subtitle: {
+				text: '2018年第一次非洲语摸底考试'
+			},
+			yAxis: {
+				title: {
+					text: '成绩'
+				}
+			},
+			legend: {
+				layout: 'horizontal',
+				align: 'right',
+				verticalAlign: 'top'
+			},
+			series: [
+				{   
+					name: '黄金霞',
+					data: [85]
+				},
+				{
+					name: '李宏雨',
+					data: [75]
+				},
+				{
+					name: '冯静静',
+					data: [80]
+				}
+			],
+			credits: {
+				// enabled: false,
+				href: 'https://www.baidu.com',
+				text: 'Jennfer',
+				style: {fontSize: 20, color: 'pink', fontWeight: 'bold'}
+			}
+		});
+	</script>
+</body>
+</html>

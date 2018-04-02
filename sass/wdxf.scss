@@ -1,0 +1,266 @@
+div, p, h1, h2, h3, h4, h5, h6, table, tr, td, ul, ol, li, dl, dt, dd, fieldset, form, input, img {
+  margin: 0;
+  padding: 0;
+ }
+
+body{
+	margin: 0;
+	overflow-x: hidden;
+
+}
+.header{
+	position: relative;
+  	background: #368fe1;
+  	width: 1260px;
+  	height: 70px;
+  	margin: 0 auto;
+
+  }
+  .header img{
+  	float: left;
+  	margin-left: 142px;
+  }
+.header .select{
+	float: left;
+	height: 20px;
+	width: 50px;
+	color: white;
+	background: #4991cf; 
+	margin-left: 200px;
+	margin-top: 8px;
+}
+.header .header-top p{
+	font-size: 12px;
+	color: white;
+	padding-top: 9px;
+    padding-left: 579px;
+}
+.header .header-top ul{
+	position: absolute;
+	overflow: hidden;
+    margin-left: 856px;
+    margin-top: -20px;
+}
+.header .header-top ul li{
+	list-style: none;
+	float: left;
+	margin-left: 12px;
+}
+.header .header-top ul li a{
+	font-size: 14px;
+	color: white;
+}
+.header-bottom{
+	float: left;
+	margin-left: -244px;
+    margin-top: 16px;
+}
+.header-bottom ul{
+	overflow: hidden;
+	float: left;
+}
+.header-bottom ul li{
+	overflow: hidden;
+	margin-left: 10px;
+	float: left;
+	list-style: none;
+	width: 90px;
+	height: 28px;
+	background: #539bdb;
+	text-align: center;
+}
+.header-bottom ul li a{
+	font-size: 14px;
+	color: white;
+	text-decoration: none;
+}
+.header-bottom img{
+	margin-left: 86px;
+    margin-top: -42px;
+}
+
+
+// section
+.section{
+	float: left;
+}
+.section-left{
+	float: left;
+}
+.section-left ul{
+	width:130px;
+	height:100%;
+	border: 1px solid #98c9ee;
+	margin-left: 170px;
+    margin-top: 18px;
+}
+.section-left ul li{
+	border-bottom: 1px dashed #98c9ee;
+	list-style: none;
+	width: 130px;
+	height: 30px;
+	text-align: center;
+}
+.section-left ul li a{ 
+	line-height: 30px;
+	text-decoration: none;
+	font-size: 14px;
+	color: #185697;
+}
+.section-left .h3 h3{
+	font-size: 14px;
+	line-height: 42px;
+}
+.section-left .h3{
+	background: #ebf7ff;
+	height:42px;
+}
+.section-left .h3h{
+	border-top: 4px solid #0080c4;
+}
+.section-left .hh{
+	border-bottom: 4px solid #0080c4;
+}
+.section-right{
+	width: 960px;
+	height: 100%;
+	float: left;
+}
+.top{
+	width: 828px;
+	height: 30px;
+	float: left;
+	margin-top: 25px;
+    margin-left: 14px;
+	border-bottom: 1px dashed #dedddd;
+}
+.top p{
+	font-size: 12px;
+	margin-top: 8px;
+	color: #185697;
+}
+.center{
+	width: 828px;
+	height: 188px;
+	margin-top: 80px;
+}
+.center .tr td{
+	background: #eef7fc;
+	color: #29639f;
+}
+.center .tr1 td{
+	text-align: right;
+	color: #ff0000;
+	font-weight: 600;
+}
+.center table{
+	border: 0 solid #cfe1f9;
+	margin-left: 16px;
+	border-bottom: 4px solid #cfe1f9;
+}
+.center p{
+	font-size: 12px;
+	margin-top: 24px;
+}
+.center .p{
+	margin-top: 24px;
+	margin-left: 14px;
+}
+.center p span{
+	color: #ff0000;
+}
+.center .p1{
+	margin-left: 14px;
+	margin-top: 6px;
+} 
+.box h3{
+	font-size: 12px;
+	margin-left: 14px;
+}
+.box .tr{
+	background: #eef7fc;
+	font-weight: 600;
+	color: #185697;
+}
+.box .tr1{
+	color: red;
+	font-weight: 600;
+}
+.box table{
+	border: 0 solid #cfe1f9;
+	margin-left: 14px;
+	margin-top: 4px;
+	border-bottom: 4px solid #cfe1f9;
+}
+.box table .td{
+	text-align: left;
+}
+.box table .td1{
+	text-align: right;
+}
+.box table .by{
+	color: #333333;
+}
+.box table .by1{
+	text-align: left;
+}
+.box table .by2{
+	color: #185697;
+}
+.box table .by3{
+	color: #008000;
+}
+.box .hk{
+	margin-top: 28px;
+}
+.img{
+	margin-left: 160px;
+	margin-top: 80px;
+}
+.header-bottom ul li:hover{
+	background: #0080c4;
+}
+.section-left ul li:hover{
+	background: #0080c4;
+}
+.center .tr1:hover{
+	background: #eef7fc;
+}
+.box table .kk:hover{
+	background: #eef7fc;
+}
+.box table .xo:hover{
+	background: #eef7fc;
+}
+
+
+
+/*
+小于960屏幕
+*/
+@media screen and (max-width: 960px){
+	.section-left ul{
+		display: none;
+	}
+	.header img{
+		display: none;
+	}
+	.header-top{
+		display: none;
+	}
+	.header .header-bottom ul{
+	 	margin-left: 426px
+	}
+}
+/*
+小于640屏幕
+*/
+@media screen and (max-width: 640px){
+	.section .section-right{
+		display: none;
+	}
+	.section-left ul{
+		display: block;
+	}
+
+}

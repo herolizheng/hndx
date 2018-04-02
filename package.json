@@ -1,0 +1,30 @@
+{
+  "name": "hsjg",
+  "version": "1.0.0",
+  "description": "团队项目 湖南商贸经济管理专修学院",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/herolizheng/hsjg.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/herolizheng/hsjg/issues"
+  },
+  "homepage": "https://github.com/herolizheng/hsjg#readme",
+  "devDependencies": {
+    "gulp": "^3.9.1",
+    "gulp-clean-css": "^3.9.3",
+    "gulp-connect": "^5.5.0",
+    "gulp-htmlmin": "^4.0.0",
+    "gulp-imagemin": "^4.1.0",
+    "gulp-minify": "^2.1.0",
+    "gulp-minify-css": "^1.2.4",
+    "gulp-sass": "^3.2.1",
+    "gulp-uglify": "^3.0.0"
+  }
+}

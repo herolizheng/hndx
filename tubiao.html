@@ -1,0 +1,66 @@
+
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+		<title>Highcharts Example</title>
+
+		<script type="text/javascript" src="http://cdn.hcharts.cn/jquery/jquery-1.8.3.min.js"></script>
+		<style type="text/css">
+${demo.css}
+		</style>
+		<script type="text/javascript">
+$(function () {
+    $('#container').highcharts({
+        title: {
+            text: '成绩统计',
+            x: 0
+        },
+        subtitle: {
+            text: '信息: 来自湖南经济商贸专修学院',
+            x: -20
+        },
+        xAxis: {
+        categories: ['第1次','第2次','第3次', '第4次', '第5次', '第6次']
+        },
+        yAxis: {
+            title: {
+                text: ''
+            },
+            plotLines: [{
+                value: 0,
+                width: 1,
+                color: 'red'
+            }]
+        },
+        tooltip: {
+            valueSuffix: '分'
+        },
+        legend: {
+            layout: 'vertical',
+            align: 'right',
+            verticalAlign: 'middle',
+            borderWidth: 0
+        },
+        series: [{
+            name: '大学英语',
+            data: [60, 65, 70, 80, 81, 70]
+        }, {
+            name: '高等数学',
+        	data: [50, 62, 57, 59, 69, 60]
+        }, {
+            name: '时事政治',
+            data: [80, 82, 70, 60, 74, 77]
+        }]
+    });
+});
+		</script>
+	</head>
+	<body>
+<script src="http://cdn.hcharts.cn/highcharts/highcharts.js"></script>
+<script src="http://cdn.hcharts.cn/highcharts/modules/exporting.js"></script>
+
+<div id="container" style="min-width: 310px; width: 600px; height: 350px;"></div>
+
+	</body>
+</html>
